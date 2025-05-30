@@ -1,6 +1,6 @@
 import pygame
 import sys
-import platform as pl
+import game_platform as pl
 import ball as b
 import map as m
 import statistic
