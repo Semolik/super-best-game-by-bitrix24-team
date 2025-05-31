@@ -401,27 +401,27 @@ class Game:
         font = pygame.font.Font(None, 25)
         lvl = ""
         if self.custom:
-            lvl = "Level: Custom"
+            lvl = "Уровень: Custom"
         else:
-            lvl = "Level: {0}".format(self.current_level_index)
+            lvl = "Уровень: {0}".format(self.current_level_index)
 
         text = font.render(lvl, True, (255, 255, 255))
         self.screen.blit(text, [self.win_width - 140, 15])
-        text = font.render("Score: {0}"
+        text = font.render("Очки: {0}"
                            .format(self.score), True, (255, 255, 255))
         self.screen.blit(text, [self.win_width - 140, 35])
-        text = font.render("Multiplier: {0}"
+        text = font.render("Счетчик X: {0}"
                            .format(self.multiplier), True, (255, 255, 255))
         self.screen.blit(text, [self.win_width - 140, 55])
-        text = font.render("Balls: {0}"
+        text = font.render("Мячей: {0}"
                            .format(self.life), True, (255, 255, 255))
         self.screen.blit(text, [self.win_width - 140, 75])
 
     def draw_pause(self):
         if self.lose:
-            t = "Final score: {0}".format(self.score)
+            t = "Финальный счет: {0}".format(self.score)
         else:
-            t = "Game paused"
+            t = "Игра на паузе"
         font = pygame.font.Font(None, 45)
         text = font.render(t, True, (255, 0, 0))
         self.screen.blit(text, [self.field_width // 2 - 60,
