@@ -21,7 +21,7 @@ class Ball:
         self.bottom = self.y + 10
         self.left = self.x - 10
         self.right = self.x + 10
-        self.color = "#c8ff00"
+        self.color = "#%06x" % random.randint(0, 0xFFFFFF)
 
     def get_side_of_intersection(self, obj):
         if self.top == obj.bottom:
