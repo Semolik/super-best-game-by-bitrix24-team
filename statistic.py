@@ -22,19 +22,19 @@ class Statistic:
 
     def draw_stats(self):
         pygame.init()
-        pygame.display.set_caption("Statistic")
+        pygame.display.set_caption("Статистика")
         name = ""
         while True:
             self.timer.tick(200)
             self.screen.blit(self.bg, (0, 0))
             font = pygame.font.Font(None, 25)
-            text = font.render("You have passed {0} levels"
+            text = font.render("Вы прошли {0} уровней"
                                .format(self.passed), True, (255, 255, 255))
             self.screen.blit(text, [10, 15])
-            text = font.render("Your final score: {0}"
+            text = font.render("Счёт: {0}"
                                .format(self.score), True, (255, 255, 255))
             self.screen.blit(text, [10, 40])
-            text = font.render("Enter your name", True, (255, 255, 255))
+            text = font.render("Введите имя", True, (255, 255, 255))
             self.screen.blit(text, [10, 65])
             text = font.render(name, True, (0, 0, 255))
             self.screen.blit(text, [10, 90])

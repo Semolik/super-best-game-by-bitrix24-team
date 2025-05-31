@@ -20,7 +20,7 @@ class CustomLevelSelector:
 
     def draw(self):
         pygame.init()
-        pygame.display.set_caption("Created levels")
+        pygame.display.set_caption("Создание уровня")
         self.bg.fill(pygame.Color("#14005e"))
         while True:
             self.timer.tick(200)
@@ -50,7 +50,7 @@ class CustomLevelSelector:
                     os.remove("./CreatedLevels/" + delete)
             font = pygame.font.Font(None, 20)
             if len(self.levels) == 0:
-                text = font.render("No levels", True, (255, 0, 0))
+                text = font.render("Нет уровней", True, (255, 0, 0))
                 self.screen.blit(text, [10, 10])
             else:
                 y = 5

@@ -21,7 +21,7 @@ class EditorMapInfo:
 
     def start(self):
         pygame.init()
-        pygame.display.set_caption("New map info")
+        pygame.display.set_caption("Новая карта")
         self.bg.fill(pygame.Color("#14005e"))
         while True:
             self.timer.tick(200)

@@ -22,16 +22,16 @@ class RecordsScreen:
 
     def draw(self):
         pygame.init()
-        pygame.display.set_caption("Records")
+        pygame.display.set_caption("Рекорд")
         while True:
             self.timer.tick(200)
             self.screen.blit(self.bg, (0, 0))
             font = pygame.font.Font(None, 25)
-            text = font.render("Name", True, (255, 255, 255))
+            text = font.render("Имя", True, (255, 255, 255))
             self.screen.blit(text, [10, 15])
-            text = font.render("Levels", True, (255, 255, 255))
+            text = font.render("Уровни", True, (255, 255, 255))
             self.screen.blit(text, [150, 15])
-            text = font.render("Score", True, (255, 255, 255))
+            text = font.render("Счёт", True, (255, 255, 255))
             self.screen.blit(text, [250, 15])
             x = 50
             for i in range(0, min(10, len(self.players))):

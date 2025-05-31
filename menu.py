@@ -12,15 +12,15 @@ class Menu:
         self.screen = pygame.display.set_mode(self.display)
         self.bg = pygame.Surface(self.display)
         self.background_color = "#14005e"
-        self.item1 = "1: Start new game"
-        self.item2 = "2: Load game"
-        self.item3 = "3: Create new level"
-        self.item4 = "4: Browse created levels"
+        self.item1 = "1: Новая игра"
+        self.item2 = "2: Сохранения"
+        self.item3 = "3: Создание уровня"
+        self.item4 = "4: Созданные уровни"
         self.timer = pygame.time.Clock()
         self.draw_main_menu()
     def draw_main_menu(self):
         pygame.init()
-        pygame.display.set_caption("Main menu")
+        pygame.display.set_caption("Меню")
         self.bg.fill(pygame.Color(self.background_color))
         while True:
             self.timer.tick(200)
